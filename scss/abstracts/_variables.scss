@@ -1,0 +1,35 @@
+$main-color: #002e4d;
+$secondary-color: #00bfff;
+$middle-color: #026485;
+$text-color: #adb7be;
+$bg-color: #1e1e1e;
+$darker-bg-color: #f9f9f9;
+
+// $main-gradient: linear-gradient(to right, $main-color 0%, #fff 100%);
+
+$backgroundTransparentGradient: linear-gradient(
+	135deg,
+	rgba(0, 46, 77, 0.2) 0%,
+	rgba(2, 100, 133, 0.2) 50%
+);
+
+@mixin iconMainGradient {
+	background: $main-color;
+	background: linear-gradient(135deg, $secondary-color 0%, $middle-color 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin textMainGradient {
+	background: $main-color;
+	background: linear-gradient(to right, $main-color 0%, #fff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin textSecondaryGradient {
+	background: $main-color;
+	background: linear-gradient(to right, $secondary-color 0%, $main-color 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

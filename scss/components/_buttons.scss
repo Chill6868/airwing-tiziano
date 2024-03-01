@@ -1,0 +1,81 @@
+@use "../abstracts/" as *;
+
+//VARIABLES
+$btn-border-width: 3px;
+$btn-border-radius: 8px;
+$btn-default-color: $main-color;
+$btn-gradient-color: linear-gradient(45deg, $main-color, $secondary-color);
+
+// DEFAULT BUTTON
+@mixin btnDefault {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em 1em;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #fff;
+	background: transparent;
+	border-radius: $btn-border-radius;
+	transition: filter 0.6s;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: $btn-border-radius;
+		border: $btn-border-width solid transparent;
+		background: $btn-default-color border-box;
+		mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+		mask-composite: destination-out;
+		mask-composite: exclude;
+	}
+
+	&:hover {
+		filter: brightness(0.7);
+	}
+}
+
+// DEFAULT BUTTON WITH BACKGROUND
+@mixin btnDefaultBackground {
+	@include btnDefault;
+	background: $btn-default-color;
+}
+
+// GRADIENT BORDER BUTTON
+@mixin btnGradient {
+	position: relative;
+	@include btnDefault;
+	border: none;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: $btn-border-radius;
+		border: $btn-border-width solid transparent;
+		background: $btn-gradient-color border-box;
+		mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+		mask-composite: destination-out;
+		mask-composite: exclude;
+	}
+
+	&:hover {
+		background-image: $btn-gradient-color;
+	}
+}
+
+// GRADIENT BORDER BUTTON WITH BACKGROUND
+@mixin btnGradientBackground {
+	@include btnDefault;
+	@include btnGradient;
+	background: $btn-gradient-color;
+	// border: 1px solid red;
+}

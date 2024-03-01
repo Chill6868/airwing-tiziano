@@ -1,0 +1,17 @@
+@keyframes spinRight {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
+
+@keyframes spinLeft {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: -360deg;
+	}
+}
