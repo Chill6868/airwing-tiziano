@@ -439,6 +439,26 @@ h6 {
 .reviews__btn {
   display: none;
 }
+.reviews__box {
+  border: 1px solid magenta;
+  height: 50vh;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.reviews .swiper {
+  border: 1px solid red;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+.reviews .swiper-slide {
+  border: 1px solid lime;
+  border-radius: 16px;
+  width: 100%;
+}
 
 @media (min-width: 576px) {
   .reviews__heading {

@@ -13,6 +13,8 @@
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.1.1/css/pro.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -79,16 +81,27 @@
                 </p>
                 <a href="#" class="reviews__btn">Get in touch!</a>
             </div>
-            <div class="embla">
-                <div class="embla__container">
-                    <div class="embla__slide">Slide 1</div>
-                    <div class="embla__slide">Slide 2</div>
-                    <div class="embla__slide">Slide 3</div>
+
+            <!-- Slider main container -->
+            <div class="reviews__box">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <!-- Swiper Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
