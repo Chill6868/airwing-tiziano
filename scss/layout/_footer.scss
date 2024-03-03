@@ -40,6 +40,26 @@
 		// border: 1px solid red;
 		margin: 0 0.5em;
 		color: #fff;
+		transition: filter 0.3s;
+
+		&:hover {
+			@include textSecondaryGradient;
+			filter: brightness(0.7);
+		}
+
+		&:last-of-type {
+			background: $main-color;
+			background: linear-gradient(
+				to right,
+				#4f5bd5 0%,
+				#962fbf 20%,
+				#d62976 40%,
+				#fa7e1e 60%,
+				#feda75 80%
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 	}
 
 	&__line {
@@ -56,11 +76,6 @@
 		&:last-of-type {
 			padding: 0 0 1em 0;
 		}
-	}
-}
-
-@media (min-width: 576px) {
-	.footer {
 	}
 }
 
@@ -95,6 +110,10 @@
 
 		&__link {
 			font-size: 2rem;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
 		}
 
 		&__line {
@@ -115,15 +134,5 @@
 				padding: 1em 0;
 			}
 		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.footer {
-	}
-}
-
-@media (min-width: 1400px) {
-	.footer {
 	}
 }

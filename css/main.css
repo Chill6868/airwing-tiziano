@@ -139,6 +139,20 @@ h6 {
 .footer__link {
   margin: 0 0.5em;
   color: #fff;
+  transition: filter 0.3s;
+}
+.footer__link:hover {
+  background: #002e4d;
+  background: linear-gradient(to right, #00bfff 0%, #026485 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(0.7);
+}
+.footer__link:last-of-type {
+  background: #002e4d;
+  background: linear-gradient(to right, #4f5bd5 0%, #962fbf 20%, #d62976 40%, #fa7e1e 60%, #feda75 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .footer__line {
   display: none;
@@ -174,6 +188,9 @@ h6 {
   }
   .footer__link {
     font-size: 2rem;
+  }
+  .footer__link:last-of-type {
+    margin-right: 0;
   }
   .footer__line {
     display: block;
@@ -370,11 +387,11 @@ h6 {
   }
 }
 .how {
-  margin-bottom: 5em;
+  margin: 5em;
 }
 .how__top-text {
   background: #002e4d;
-  background: linear-gradient(to right, #00bfff 0%, #002e4d 50%);
+  background: linear-gradient(to right, #00bfff 0%, #026485 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -386,7 +403,7 @@ h6 {
 .how__text {
   margin-bottom: 1em;
 }
-.how__cards-box {
+.how__card-box {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -440,7 +457,7 @@ h6 {
   .how__top-text, .how__text {
     font-size: 2rem;
   }
-  .how__cards-box {
+  .how__card-box {
     grid-template-rows: repeat(2, 1fr);
   }
   .how__card:nth-of-type(1) {
@@ -466,7 +483,7 @@ h6 {
   .how__top-text, .how__text {
     font-size: 2.2rem;
   }
-  .how__cards-box {
+  .how__card-box {
     grid-template-rows: 1fr;
   }
   .how__card:nth-of-type(1) {
@@ -498,12 +515,15 @@ h6 {
     font-size: 8rem;
   }
 }
+.reviews {
+  margin: 5em 0;
+}
 .reviews .text-box {
   margin-bottom: 1em;
 }
 .reviews__top-text {
   background: #002e4d;
-  background: linear-gradient(to right, #00bfff 0%, #002e4d 50%);
+  background: linear-gradient(to right, #00bfff 0%, #026485 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -630,6 +650,110 @@ h6 {
 }
 @media (min-width: 1400px) {
   .reviews__heading {
+    font-size: 8rem;
+  }
+}
+.get-in-touch {
+  margin: 5em 0;
+  text-align: center;
+}
+.get-in-touch__heading {
+  margin: 0.1em 0;
+  font-size: 3.5rem;
+  color: #fff;
+}
+.get-in-touch__text {
+  margin-bottom: 1em;
+}
+.get-in-touch__btn {
+  position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  border-radius: 8px;
+  transition: filter 0.6s;
+  border: none;
+  display: inline-block;
+  padding: 1em 1.5em;
+}
+.get-in-touch__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background: #002e4d border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+          mask-composite: destination-out;
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+.get-in-touch__btn:hover {
+  filter: brightness(0.7);
+}
+.get-in-touch__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background: linear-gradient(45deg, #002e4d, #00bfff) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+          mask-composite: destination-out;
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+.get-in-touch__btn:hover {
+  background-image: linear-gradient(45deg, #002e4d, #00bfff);
+}
+
+@media (min-width: 576px) {
+  .get-in-touch__heading {
+    font-size: 5rem;
+  }
+  .get-in-touch__text {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) {
+  .get-in-touch__heading {
+    font-size: 6rem;
+  }
+  .get-in-touch__text {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .get-in-touch__heading {
+    font-size: 6.5rem;
+  }
+  .get-in-touch__text {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .get-in-touch__heading {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1400px) {
+  .get-in-touch__heading {
     font-size: 8rem;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -29,7 +29,7 @@ $backgroundTransparentGradient: linear-gradient(
 
 @mixin textSecondaryGradient {
 	background: $main-color;
-	background: linear-gradient(to right, $secondary-color 0%, $main-color 50%);
+	background: linear-gradient(to right, $secondary-color 0%, $middle-color 50%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
