@@ -3,12 +3,7 @@
 
 .how {
 	// border: 1px solid red;
-	margin-bottom: 25em;
-
-	&__text-box {
-		// border: 1px solid red;
-		margin: 0 auto;
-	}
+	margin-bottom: 5em;
 
 	&__top-text {
 		@include textSecondaryGradient;
@@ -22,7 +17,7 @@
 	}
 
 	&__text {
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 	}
 
 	&__cards-box {
@@ -123,10 +118,6 @@
 
 @media (min-width: 992px) {
 	.how {
-		&__text-box {
-			width: 75%;
-		}
-
 		&__heading {
 			font-size: 6.5rem;
 		}

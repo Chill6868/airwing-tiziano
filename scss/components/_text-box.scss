@@ -1,0 +1,9 @@
+.text-box {
+	// border: 1px solid red;
+	margin: 0 auto;
+}
+@media (min-width: 992px) {
+	.text-box {
+		width: 75%;
+	}
+}
