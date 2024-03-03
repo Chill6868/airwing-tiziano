@@ -115,6 +115,7 @@ h6 {
 .footer {
   border-top: 1px solid #adb7be;
   background-color: rgba(30, 30, 30, 0.5);
+  overflow: hidden;
 }
 .footer .wrapper {
   display: flex;
@@ -387,7 +388,7 @@ h6 {
   }
 }
 .how {
-  margin: 5em;
+  margin: 5em 0;
 }
 .how__top-text {
   background: #002e4d;
