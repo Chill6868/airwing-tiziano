@@ -4,27 +4,9 @@
 .reviews {
 	margin: 5em 0;
 
-	.text-box {
-		margin-bottom: 1em;
-	}
-
-	&__top-text {
-		@include textSecondaryGradient;
-	}
-
-	&__heading {
-		// border: 1px solid blue;
-		margin: 0.1em 0;
-		font-size: 3.5rem;
-		color: #fff;
-	}
-
-	&__text {
-		margin-bottom: 1em;
-	}
-
 	&__btn {
 		display: none;
+		margin-bottom: 1em;
 	}
 
 	&__box {
@@ -52,31 +34,13 @@
 }
 
 @media (min-width: 576px) {
-	.reviews {
-		&__heading {
-			font-size: 5rem;
-		}
-
-		&__top-text,
-		&__text {
-			font-size: 1.8rem;
-		}
-	}
+	// .reviews {}
 }
 
 @media (min-width: 768px) {
 	.reviews {
 		.text-box {
 			text-align: center;
-		}
-
-		&__heading {
-			font-size: 6rem;
-		}
-
-		&__top-text,
-		&__text {
-			font-size: 2rem;
 		}
 
 		&__btn {
@@ -92,30 +56,13 @@
 }
 
 @media (min-width: 992px) {
-	.reviews {
-		&__heading {
-			font-size: 6.5rem;
-		}
-
-		&__top-text,
-		&__text {
-			font-size: 2.2rem;
-		}
-	}
+	// .reviews {}
 }
 
 @media (min-width: 1200px) {
-	.reviews {
-		&__heading {
-			font-size: 7rem;
-		}
-	}
+	// .reviews {}
 }
 
 @media (min-width: 1400px) {
-	.reviews {
-		&__heading {
-			font-size: 8rem;
-		}
-	}
+	// .reviews {}
 }

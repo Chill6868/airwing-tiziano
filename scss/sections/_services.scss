@@ -1,0 +1,88 @@
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.services {
+	margin: 5em 0;
+
+	&__title {
+		position: relative;
+		margin-left: 16px;
+		margin-bottom: 0.5em;
+		padding-bottom: 0.1em;
+		font-size: 2rem;
+		color: #fff;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: -16px;
+			height: 100%;
+			width: 5px;
+			background: linear-gradient(
+				180deg,
+				$main-color 0%,
+				$secondary-color 100%
+			);
+			border-radius: $btn-border-radius;
+		}
+	}
+
+	&__text {
+		margin-left: 16px;
+	}
+
+	&__link {
+		// border: 1px solid red;
+		margin-left: 16px;
+		margin-bottom: 2em;
+		display: flex;
+		align-items: center;
+		max-width: 150px;
+		color: #fff;
+
+		&:hover {
+			@include textSecondaryGradient;
+		}
+	}
+
+	&__link-text {
+		text-decoration: underline;
+	}
+}
+
+@media (min-width: 576px) {
+	.services {
+		&__title {
+			font-size: 2.4rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.services {
+		&__title {
+			font-size: 2.8rem;
+		}
+
+		&__text {
+			width: 80%;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.services {
+		&__title {
+			font-size: 3.6rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	// .services {}
+}
+
+@media (min-width: 1400px) {
+	// .services {}
+}

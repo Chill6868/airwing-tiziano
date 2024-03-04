@@ -5,21 +5,6 @@
 	// border: 1px solid red;
 	margin: 5em 0;
 
-	&__top-text {
-		@include textSecondaryGradient;
-	}
-
-	&__heading {
-		// border: 1px solid blue;
-		margin: 0.1em 0;
-		font-size: 3.5rem;
-		color: #fff;
-	}
-
-	&__text {
-		margin-bottom: 1em;
-	}
-
 	&__card-box {
 		// border: 1px solid green;
 		display: grid;
@@ -66,29 +51,11 @@
 }
 
 @media (min-width: 576px) {
-	.how {
-		&__heading {
-			font-size: 5rem;
-		}
-
-		&__top-text,
-		&__text {
-			font-size: 1.8rem;
-		}
-	}
+	// .how {}
 }
 
 @media (min-width: 768px) {
 	.how {
-		&__heading {
-			font-size: 6rem;
-		}
-
-		&__top-text,
-		&__text {
-			font-size: 2rem;
-		}
-
 		&__card-box {
 			grid-template-rows: repeat(2, 1fr);
 		}
@@ -118,15 +85,6 @@
 
 @media (min-width: 992px) {
 	.how {
-		&__heading {
-			font-size: 6.5rem;
-		}
-
-		&__top-text,
-		&__text {
-			font-size: 2.2rem;
-		}
-
 		&__card-box {
 			grid-template-rows: 1fr;
 		}
@@ -159,17 +117,9 @@
 }
 
 @media (min-width: 1200px) {
-	.how {
-		&__heading {
-			font-size: 7rem;
-		}
-	}
+	// .how {}
 }
 
 @media (min-width: 1400px) {
-	.how {
-		&__heading {
-			font-size: 8rem;
-		}
-	}
+	// .how {}
 }
