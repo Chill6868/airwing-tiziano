@@ -5,7 +5,11 @@ $text-color: #adb7be;
 $bg-color: #1e1e1e;
 $darker-bg-color: #f9f9f9;
 
-// $main-gradient: linear-gradient(to right, $main-color 0%, #fff 100%);
+$main-gradient: linear-gradient(
+	to right,
+	$main-color 0%,
+	$secondary-color 100%
+);
 
 $backgroundTransparentGradient: linear-gradient(
 	135deg,

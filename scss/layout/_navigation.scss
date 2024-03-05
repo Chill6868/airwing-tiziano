@@ -1,0 +1,148 @@
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.nav {
+	display: none;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	// border: 1px solid red;
+	font-size: 1.8rem;
+	backdrop-filter: blur(16px);
+	background-color: rgba(0, 0, 0, 0.5);
+
+	.wrapper {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		// border: 1px solid red;
+		height: 50px;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	// &__link-box {}
+
+	&__link {
+		position: relative;
+		margin: 0 0.5em;
+		color: #fff;
+		transition: filter 0.3s;
+
+		&:nth-of-type(1)::before {
+			position: absolute;
+			content: "";
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 50%;
+			height: 3px;
+			background: $main-gradient;
+			border-radius: $btn-border-radius;
+		}
+
+		&:hover {
+			@include textSecondaryGradient;
+			filter: brightness(0.7);
+		}
+	}
+
+	&__ig-link {
+		background: $main-color;
+		background: linear-gradient(
+			to right,
+			#4f5bd5 0%,
+			#962fbf 20%,
+			#d62976 40%,
+			#fa7e1e 60%,
+			#feda75 80%
+		);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		&:hover {
+			background: $main-color;
+			background: linear-gradient(
+				to right,
+				#4f5bd5 0%,
+				#962fbf 20%,
+				#d62976 40%,
+				#fa7e1e 60%,
+				#feda75 80%
+			);
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			filter: brightness(0.7);
+		}
+	}
+
+	&__btn-box {
+		// border: 1px solid red;
+		display: flex;
+		gap: 1em;
+	}
+
+	&__contact-btn {
+		@include btnDefault;
+		border: none;
+		background: $backgroundTransparentGradient;
+		font-size: inherit;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: $btn-border-radius;
+			border: $btn-border-width solid transparent;
+			background: $btn-gradient-color border-box;
+			mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+			mask-composite: destination-out;
+			mask-composite: exclude;
+		}
+	}
+
+	&__btn-language {
+		@include btnDefault;
+		font-size: inherit;
+	}
+}
+
+@media (min-width: 576px) {
+	// .nav {}
+}
+
+@media (min-width: 768px) {
+	// .nav {}
+}
+
+@media (min-width: 992px) {
+	.nav {
+		display: block;
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	.nav {
+		&__link-box {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

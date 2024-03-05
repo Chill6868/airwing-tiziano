@@ -19,6 +19,7 @@ $btn-gradient-color: linear-gradient(45deg, $main-color, $secondary-color);
 	background: transparent;
 	border-radius: $btn-border-radius;
 	transition: filter 0.6s;
+	cursor: pointer;
 
 	&::before {
 		content: "";
@@ -48,7 +49,6 @@ $btn-gradient-color: linear-gradient(45deg, $main-color, $secondary-color);
 
 // GRADIENT BORDER BUTTON
 @mixin btnGradient {
-	position: relative;
 	@include btnDefault;
 	border: none;
 
