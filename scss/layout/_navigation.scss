@@ -5,18 +5,64 @@
 	display: none;
 	z-index: 100;
 	position: fixed;
+	top: 0;
 	width: 100%;
-	height: 100px;
 	// border: 1px solid red;
 	font-size: 1.8rem;
-	backdrop-filter: blur(16px);
-	background-color: rgba(0, 0, 0, 0.5);
+	// backdrop-filter: blur(16px);
+	// background-color: #111724;
+	transition: transform 0.3s, background-color 0.3s, backdrop-filter 0.3s;
 
 	.wrapper {
 		height: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	&__top-box {
+		// border: 1px solid red;
+		width: 100%;
+		height: 50px;
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+
+	&__top-box-part {
+		// border: 1px solid lime;
+		display: flex;
+		gap: 1em;
+	}
+
+	&__top-box-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: filter 0.3s;
+
+		&:hover {
+			filter: brightness(0.7);
+		}
+	}
+
+	&__ig-link {
+		background: $main-color;
+		background: linear-gradient(
+			to right,
+			#4f5bd5 0%,
+			#962fbf 20%,
+			#d62976 40%,
+			#fa7e1e 60%,
+			#feda75 80%
+		);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&__bottom-box {
+		position: relative;
+		// border: 1px solid red;
+		width: 100%;
+		height: 100px;
 	}
 
 	&__logo {
@@ -54,35 +100,6 @@
 		}
 	}
 
-	&__ig-link {
-		background: $main-color;
-		background: linear-gradient(
-			to right,
-			#4f5bd5 0%,
-			#962fbf 20%,
-			#d62976 40%,
-			#fa7e1e 60%,
-			#feda75 80%
-		);
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-
-		&:hover {
-			background: $main-color;
-			background: linear-gradient(
-				to right,
-				#4f5bd5 0%,
-				#962fbf 20%,
-				#d62976 40%,
-				#fa7e1e 60%,
-				#feda75 80%
-			);
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
-			filter: brightness(0.7);
-		}
-	}
-
 	&__btn-box {
 		// border: 1px solid red;
 		display: flex;
@@ -93,7 +110,6 @@
 		@include btnDefault;
 		border: none;
 		background: $backgroundTransparentGradient;
-		font-size: inherit;
 
 		&::before {
 			content: "";

@@ -2,14 +2,18 @@
 @use "../components/" as *;
 
 .services {
-	margin: 5em 0;
+	margin: 7.5em 0;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+	}
 
 	&__title {
 		position: relative;
 		margin-left: 16px;
-		margin-bottom: 0.5em;
-		padding-bottom: 0.1em;
-		font-size: 2rem;
+		margin-bottom: 0.25em;
 		color: #fff;
 
 		&::before {
@@ -30,12 +34,12 @@
 
 	&__text {
 		margin-left: 16px;
+		margin-bottom: 2em;
 	}
 
 	&__link {
 		// border: 1px solid red;
 		margin-left: 16px;
-		margin-bottom: 2em;
 		display: flex;
 		align-items: center;
 		max-width: 150px;
@@ -52,19 +56,11 @@
 }
 
 @media (min-width: 576px) {
-	.services {
-		&__title {
-			font-size: 2.4rem;
-		}
-	}
+	// .services {}
 }
 
 @media (min-width: 768px) {
 	.services {
-		&__title {
-			font-size: 2.8rem;
-		}
-
 		&__text {
 			width: 80%;
 		}
@@ -72,11 +68,7 @@
 }
 
 @media (min-width: 992px) {
-	.services {
-		&__title {
-			font-size: 3.6rem;
-		}
-	}
+	// .services {}
 }
 
 @media (min-width: 1200px) {

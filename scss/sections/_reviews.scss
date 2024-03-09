@@ -2,39 +2,97 @@
 @use "../components/" as *;
 
 .reviews {
-	margin: 5em 0;
+	margin: 7.5em 0;
 
 	&__btn {
 		display: none;
-		margin-bottom: 1em;
 	}
 
 	&__box {
-		border: 1px solid magenta;
-		height: 50vh;
+		// border: 1px solid magenta;
+		height: 30vh;
 		padding: 1em 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
+		// mask-image: linear-gradient(
+		// 	to right,
+		// 	rgba(0, 0, 0, 1) 80%,
+		// 	rgba(0, 0, 0, 0) 95%
+		// );
 	}
 
 	.swiper {
-		border: 1px solid red;
+		// border: 1px solid red;
 		height: 100%;
 		width: 100%;
 		overflow: visible;
 	}
 
 	.swiper-slide {
-		border: 1px solid lime;
-		border-radius: 16px;
+		// border: 1px solid lime;
+		border-radius: $btn-border-radius;
 		width: 100%;
+		padding: 1em;
+		background-image: $backgroundTransparentGradient;
+		overflow: hidden;
+	}
+
+	&__card-heading {
+		// border: 1px solid red;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 1em;
+	}
+
+	&__card-img {
+		width: 5rem;
+		border-radius: 50%;
+		// border: 1px solid green;
+	}
+
+	&__card-text-box {
+		margin-left: 1em;
+		color: #fff;
+	}
+
+	&__card-author {
+		font-family: "Montserrat", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 1.8rem;
+	}
+
+	&__card-who {
+		font-family: "Montserrat", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 1.4rem;
+	}
+
+	&__card-text {
+		// border: 1px solid lime;
+		font-size: 1.6rem;
 	}
 }
 
 @media (min-width: 576px) {
-	// .reviews {}
+	.reviews {
+		&__box {
+			z-index: 0;
+			mask-image: linear-gradient(
+					to left,
+					rgba(0, 0, 0, 1) 80%,
+					rgba(0, 0, 0, 0) 95%
+				),
+				linear-gradient(to right, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 95%);
+			mask-composite: intersect;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -43,10 +101,15 @@
 			text-align: center;
 		}
 
+		.text__p {
+			margin: 0 0 1em 0;
+		}
+
 		&__btn {
 			@include btnGradient;
 			display: inline-block;
 			padding: 1em 1.5em;
+			margin-bottom: 1em;
 			// width: 40%;
 			// margin: 0 auto;
 			// margin: 0 auto;
@@ -60,7 +123,19 @@
 }
 
 @media (min-width: 1200px) {
-	// .reviews {}
+	.reviews {
+		&__card-author {
+			font-size: 2rem;
+		}
+
+		&__card-who {
+			font-size: 1.6rem;
+		}
+
+		&__card-text {
+			font-size: 1.8rem;
+		}
+	}
 }
 
 @media (min-width: 1400px) {

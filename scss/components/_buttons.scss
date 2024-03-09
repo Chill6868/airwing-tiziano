@@ -13,7 +13,7 @@ $btn-gradient-color: linear-gradient(45deg, $main-color, $secondary-color);
 	justify-content: center;
 	align-items: center;
 	padding: 0.5em 1em;
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	text-align: center;
 	color: #fff;
 	background: transparent;
@@ -38,6 +38,14 @@ $btn-gradient-color: linear-gradient(45deg, $main-color, $secondary-color);
 
 	&:hover {
 		filter: brightness(0.7);
+	}
+
+	@media (min-width: 576px) {
+		font-size: 1.6rem;
+	}
+
+	@media (min-width: 768px) {
+		font-size: 1.8rem;
 	}
 }
 

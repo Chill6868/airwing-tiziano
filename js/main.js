@@ -21,3 +21,19 @@ const swiper = new Swiper(".swiper", {
 		},
 	},
 });
+
+const navDesktop = document.querySelector(".nav");
+
+const handleNav = () => {
+	if (scrollY >= 100) {
+		navDesktop.style.transform = "translateY(-50px)";
+		navDesktop.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+		navDesktop.style.backdropFilter = "blur(16px)";
+	} else {
+		navDesktop.style.transform = "translateY(0)";
+		navDesktop.style.backgroundColor = "";
+		navDesktop.style.backdropFilter = "blur(0)";
+	}
+};
+
+document.addEventListener("scroll", handleNav);

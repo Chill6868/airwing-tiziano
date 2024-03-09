@@ -2,31 +2,88 @@
 
 .text {
 	// border: 1px solid red;
-	margin: 5em 0;
+	// margin: 5em 0;
 
+	//xs
+	&__top-xs {
+		@include textSecondaryGradient;
+		font-size: 1.4rem;
+	}
+
+	&__heading-xs {
+		// border: 1px solid blue;
+		margin: 0.1em 0;
+		font-size: 2rem;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	&__p-xs {
+		margin-bottom: 1em;
+		font-size: 1.4rem;
+	}
+
+	//sm
+	&__top-sm {
+		@include textSecondaryGradient;
+		font-size: 1.6rem;
+	}
+
+	&__heading-sm {
+		// border: 1px solid blue;
+		margin: 0.25em 0;
+		font-size: 3rem;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	&__p-sm {
+		margin-bottom: 1em;
+		font-size: 1.6rem;
+	}
+
+	//md
 	&__top {
 		@include textSecondaryGradient;
+		font-size: 1.6rem;
 	}
 
 	&__heading {
 		// border: 1px solid blue;
-		margin: 0.1em 0;
+		margin: 0.25em 0;
 		font-size: 3.5rem;
 		color: #fff;
 	}
 
 	&__p {
-		margin-bottom: 1em;
+		margin-bottom: 2em;
+		font-size: 1.6rem;
 	}
 }
 
 @media (min-width: 576px) {
 	.text {
+		//xs
+		&__heading-xs {
+			font-size: 3rem;
+		}
+
+		&__top-xs,
+		&__p-xs {
+			font-size: 1.6rem;
+		}
+
+		//sm
+		&__heading-sm {
+			font-size: 3.5rem;
+		}
+
+		//md
 		&__heading {
 			font-size: 5rem;
 		}
 
-		&__top-text,
+		&__top,
 		&__p {
 			font-size: 1.8rem;
 		}
@@ -35,11 +92,22 @@
 
 @media (min-width: 768px) {
 	.text {
+		//xs
+		&__heading-xs {
+			font-size: 3.5rem;
+		}
+
+		//sm
+		&__heading-sm {
+			font-size: 4.5rem;
+		}
+
+		//md
 		&__heading {
 			font-size: 6rem;
 		}
 
-		&__top-text,
+		&__top,
 		&__p {
 			font-size: 2rem;
 		}
@@ -48,6 +116,27 @@
 
 @media (min-width: 992px) {
 	.text {
+		//xs
+		&__heading-xs {
+			font-size: 4rem;
+		}
+
+		&__top-xs,
+		&__p-xs {
+			font-size: 1.8rem;
+		}
+
+		//sm
+		&__heading-sm {
+			font-size: 5rem;
+		}
+
+		&__top-sm,
+		&__p-sm {
+			font-size: 1.8rem;
+		}
+
+		//md
 		&__heading {
 			font-size: 6.5rem;
 		}
@@ -61,6 +150,12 @@
 
 @media (min-width: 1200px) {
 	.text {
+		//sm
+		&__heading-sm {
+			font-size: 5.25rem;
+		}
+
+		//md
 		&__heading {
 			font-size: 6.75rem;
 		}
@@ -69,6 +164,12 @@
 
 @media (min-width: 1400px) {
 	.text {
+		//sm
+		&__heading-sm {
+			font-size: 5.5rem;
+		}
+
+		//md
 		&__heading {
 			font-size: 7rem;
 		}
