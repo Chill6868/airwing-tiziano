@@ -27,8 +27,9 @@
                 <div class="nav__top-box-part">
                     <a href="mailto:qwerty@gmail.com" class="nav__top-box-item"><i
                             class="fa-regular fa-envelope"></i>&nbsp;contact@kloszard.pl</a>
-                    <a href="tel:123123123" class="nav__top-box-item"><i class="fa-regular fa-phone"></i>&nbsp;666 666
-                        666</a>
+                    <a href="tel:+393295762226" class="nav__top-box-item"><i class="fa-regular fa-phone"></i>&nbsp;+39
+                        329
+                        576 2226</a>
                 </div>
                 <div class="nav__top-box-part">
                     <a href="https://www.instagram.com/airwing_2023/" target="_blank"
@@ -38,16 +39,18 @@
         </div>
         <div class="nav__bottom-box">
             <div class="wrapper">
-                <a href="index.html" class="nav__logo">
-                    <picture>
-                        <source media="(max-width: 1200px)" srcset="./img/logo/logoSmall.png" />
-                        <img src="./img/logo/logoLarge.png" alt="">
-                    </picture>
-                </a>
-                <div class="nav__link-box">
-                    <a href="index.html" class="nav__link">Home</a>
-                    <a href="services.html" class="nav__link">Services</a>
-                    <a href="our-work.html" class="nav__link">Our Work</a>
+                <div class="nav__bottom-box-part">
+                    <a href="index.html" class="nav__logo">
+                        <picture>
+                            <source media="(max-width: 1200px)" srcset="./img/logo/logoSmall.png" />
+                            <img src="./img/logo/logoLarge.png" alt="">
+                        </picture>
+                    </a>
+                    <div class="nav__link-box">
+                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="services.html" class="nav__link">Services</a>
+                        <a href="our-work.html" class="nav__link">Our Work</a>
+                    </div>
                 </div>
 
                 <div class="nav__btn-box">
@@ -140,30 +143,25 @@
     </nav>
 
     <header class="header">
+        <div class="header__bg">
+            <video autoplay muted class="header__video"></video>
+            <div class="header__bg-shadow"></div>
+        </div>
         <div class="wrapper">
-            <div class="header__box">
-                <label>
-                    Language:
-                    <select>
-                        <option value="en">EN</option>
-                        <option value="de">DE</option>
-                        <option value="es">ES</option>
-                    </select>
-                </label>
-                <h1 class="header__heading">Capture the Sky.</h1>
-                <p class="header__text">Rent stunning drone shots hassle-free at Airwing! Elevate your
+            <div class="text-box">
+                <h1 class="header__heading text__heading">Capture the Sky.</h1>
+                <p class="header__text text__p">Rent stunning drone shots hassle-free at Airwing! Elevate your
                     projects
                     with
                     professional aerial perspectives tailored to your needs. Explore now and let your creativity soar!
                 </p>
                 <a href="#" class="header__btn">Looking for photos? Get in touch!</a>
             </div>
-            <div class="header__bg-radial"></div>
-            <div class="header__bg-icons-box">
+            <!-- <div class="header__bg-icons-box">
                 <img src="./img/icons/droneIcon1.svg" alt="" class="header__bg-icon">
                 <img src="./img/icons/droneIcon2.svg" alt="" class="header__bg-icon">
                 <img src="./img/icons/droneIcon1.svg" alt="" class="header__bg-icon">
-            </div>
+            </div> -->
         </div>
     </header>
 
@@ -214,6 +212,9 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                            <div class="reviews__card-quote-box">
+                                <img src="./img/icons/quote.svg" alt="" class="reviews__card-quote">
+                            </div>
                             <div class="reviews__card-heading">
                                 <img src="./img/logo/logoSmall.png" alt="" class="reviews__card-img">
                                 <div class="reviews__card-text-box">
@@ -228,6 +229,9 @@
                         </div>
 
                         <div class="swiper-slide">
+                            <div class="reviews__card-quote-box">
+                                <img src="./img/icons/quote.svg" alt="" class="reviews__card-quote">
+                            </div>
                             <div class="reviews__card-heading">
                                 <img src="./img/logo/logoSmall.png" alt="" class="reviews__card-img">
                                 <div class="reviews__card-text-box">
@@ -242,6 +246,9 @@
                         </div>
 
                         <div class="swiper-slide">
+                            <div class="reviews__card-quote-box">
+                                <img src="./img/icons/quote.svg" alt="" class="reviews__card-quote">
+                            </div>
                             <div class="reviews__card-heading">
                                 <img src="./img/logo/logoSmall.png" alt="" class="reviews__card-img">
                                 <div class="reviews__card-text-box">
@@ -256,6 +263,9 @@
                         </div>
 
                         <div class="swiper-slide">
+                            <div class="reviews__card-quote-box">
+                                <img src="./img/icons/quote.svg" alt="" class="reviews__card-quote">
+                            </div>
                             <div class="reviews__card-heading">
                                 <img src="./img/logo/logoSmall.png" alt="" class="reviews__card-img">
                                 <div class="reviews__card-text-box">
@@ -376,7 +386,7 @@
                         class="footer__logo"></a>
                 <div class="footer__link-box">
                     <div>
-                        <a href="#" class="footer__link">Services</a>
+                        <a href="services.html" class="footer__link">Services</a>
                         <a href="#" class="footer__link">Our Work</a>
                         <a href="#" class="footer__link">About</a>
                     </div>
@@ -394,9 +404,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Google Translate JS -->
-    <script type="module" src="./js/translate.js"></script>
 
     <!-- Swiper Carousel JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
