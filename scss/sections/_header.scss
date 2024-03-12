@@ -22,7 +22,7 @@
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.5);
 		background-image: url("../../img/header/bgfix.png"),
-			linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 75%);
+			linear-gradient(0deg, $main-color 0%, rgba(0, 0, 0, 0) 75%);
 		background-position: center;
 		background-size: cover;
 	}
