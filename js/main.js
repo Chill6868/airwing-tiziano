@@ -39,6 +39,7 @@ const handleNav = () => {
 };
 
 document.addEventListener("scroll", handleNav);
+
 // -------------------------------------------------------------------------------------------------
 
 const video = document.querySelector(".header__video");
@@ -64,3 +65,13 @@ video.addEventListener("ended", () => {
 	video.src = videos[activeVideo];
 	video.play();
 });
+
+// -------------------------------------------------------------------------------------------------
+const navMobile = document.querySelector(".nav-mobile__bottom-container");
+const navMobileBurgerBtn = document.querySelector(".nav-mobile__hamburger");
+
+const showMobileNav = () => {
+	navMobile.classList.toggle("nav-mobile__bottom-container--active");
+};
+
+navMobileBurgerBtn.addEventListener("click", showMobileNav);
