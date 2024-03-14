@@ -1,10 +1,13 @@
-//home
+// Misc
+@forward "./section-heading";
+@forward "./get-in-touch";
+
+// Home
 @forward "./header";
 @forward "./how";
 @forward "./reviews";
 @forward "./services";
-@forward "./get-in-touch";
 @forward "./process";
 
-//services
+// Services
 @forward "./services-description";

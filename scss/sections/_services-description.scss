@@ -1,24 +1,9 @@
 @use "../abstracts/" as *;
 @use "../components/" as *;
 
-.services-heading {
-	margin: 15em 0 5em 0;
-	text-align: center;
-
-	&__btn {
-		@include btnGradient;
-		display: inline-block;
-		padding: 1em 1.5em;
-	}
-}
-
 .services-description {
 	// border: 1px solid aqua;
 	margin: 5em 0;
-
-	.wrapper {
-		// border: 1px solid magenta;
-	}
 
 	&__container {
 		display: grid;
