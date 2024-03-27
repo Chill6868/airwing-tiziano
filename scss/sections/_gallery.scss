@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.gallery {
+	&__container {
+		// border: 1px solid red;
+		// height: 1000px !important;
+		mask-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 1) 0%,
+			rgba(0, 0, 0, 0) 90%
+		);
+		// overflow: hidden;
+	}
+
+	&__item {
+		width: 100%;
+		height: 100%;
+		padding: 0.25em;
+		filter: brightness(0.7);
+		transition: filter 0.3s;
+		border-radius: $btn-border-radius;
+
+		&:hover {
+			filter: brightness(1);
+		}
+	}
+}

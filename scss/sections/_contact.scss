@@ -1,0 +1,230 @@
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.contact {
+	margin: 15em 0 7.5em 0;
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1em;
+	}
+
+	&__box {
+		// border: 1px solid red;
+
+		&--info-box {
+			grid-column: 1/-1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&--form-box {
+			grid-column: 1/-1;
+			border-radius: $btn-border-radius;
+			background-color: #122631;
+			padding: 1em;
+			overflow: hidden;
+		}
+	}
+
+	&__text-box {
+		padding: 1em;
+	}
+
+	&__card-box {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1em;
+	}
+
+	&__card {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 1em;
+		background-color: #122631;
+		border-radius: $btn-border-radius;
+
+		&:nth-of-type(1) {
+			grid-column: 1/-1;
+		}
+
+		&:nth-of-type(2) {
+			grid-column: 1/-1;
+		}
+	}
+
+	&__card-icon-box {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 50%;
+			border: $btn-border-width solid transparent;
+			background: $btn-gradient-color border-box;
+			mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+			mask-composite: destination-out;
+			mask-composite: exclude;
+		}
+	}
+
+	&__card-icon {
+		color: #fff;
+		padding: 3px;
+		font-size: 2rem;
+	}
+
+	&__card-link {
+		margin-left: 1em;
+		font-size: 1.6rem;
+	}
+
+	&__form {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1em;
+	}
+
+	&__form-input-box {
+		position: relative;
+		grid-column: 1/-1;
+	}
+
+	&__form-label {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0.5em;
+		background-color: #122631;
+		padding: 0 0.25em;
+		// border: 1px solid red;
+		transition: top 0.1s, font-size 0.1s;
+		pointer-events: none;
+
+		&--active {
+			font-size: 1.4rem !important;
+			top: 0;
+		}
+	}
+
+	&__form-input {
+		padding: 1em;
+		width: 100%;
+		background-color: transparent;
+		border: 1px solid $middle-color;
+		border-radius: $btn-border-radius;
+		color: #fff;
+		outline: none;
+		transition: border 0.3s;
+
+		&:focus {
+			border: 1px solid $secondary-color;
+
+			& ~ .contact__form-label {
+				font-size: 1.4rem;
+				top: 0;
+			}
+		}
+	}
+
+	&__form-textarea {
+		resize: vertical;
+		min-height: 10em;
+
+		& ~ .contact__form-label {
+			top: 1.5em;
+			// transform: translateY(-50%);
+		}
+	}
+
+	&__form-btn {
+		@include btnGradient;
+		display: inline-block;
+		grid-column: 1/-1;
+		padding: 1em 1.5em;
+	}
+}
+
+@media (min-width: 576px) {
+	.contact {
+		&__card-link,
+		&__form-label,
+		&__form-input {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.contact {
+		&__card {
+			&:nth-of-type(1) {
+				grid-column: 1/2;
+			}
+
+			&:nth-of-type(2) {
+				grid-column: 2/3;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.contact {
+		&__box {
+			&--info-box {
+				grid-column: 1/2;
+			}
+
+			&--form-box {
+				grid-column: 2/3;
+			}
+		}
+
+		&__card {
+			&:nth-of-type(1) {
+				grid-column: 1/-1;
+			}
+
+			&:nth-of-type(2) {
+				grid-column: 1/-1;
+			}
+		}
+
+		&__card-icon-box {
+			width: 75px;
+			height: 75px;
+		}
+
+		&__card-icon {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.contact {
+		&__card {
+			&:nth-of-type(1) {
+				grid-column: 1/2;
+			}
+
+			&:nth-of-type(2) {
+				grid-column: 2/3;
+			}
+		}
+	}
+}
