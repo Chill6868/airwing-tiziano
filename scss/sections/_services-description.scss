@@ -3,12 +3,13 @@
 
 .services-description {
 	// border: 1px solid aqua;
-	margin: 5em 0;
+	position: relative;
+	margin: 7.5em 0;
 
 	&__container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(3, 1fr);
+		grid-template-rows: repeat(4, 1fr);
 		gap: 1em;
 		align-items: center;
 	}
@@ -27,6 +28,11 @@
 		&:nth-of-type(3) {
 			grid-column: 1/-1;
 			grid-row: 3/4;
+		}
+
+		&:nth-of-type(4) {
+			grid-column: 1/-1;
+			grid-row: 4/5;
 		}
 	}
 
@@ -60,6 +66,11 @@
 				grid-column: 1/2;
 				grid-row: 3/4;
 			}
+
+			&:nth-of-type(4) {
+				grid-column: 2/3;
+				grid-row: 4/5;
+			}
 		}
 
 		&__3d-icon {
@@ -81,6 +92,11 @@
 			&:nth-of-type(3) {
 				grid-column: 2/3;
 				grid-row: 3/4;
+			}
+
+			&:nth-of-type(4) {
+				grid-column: 1/2;
+				grid-row: 4/5;
 			}
 		}
 	}

@@ -1,5 +1,9 @@
 @use "../abstracts/" as *;
 
+html {
+	scroll-padding-top: 202px;
+}
+
 body {
 	font-family: "DM Sans", sans-serif;
 	font-optical-sizing: auto;
@@ -12,6 +16,7 @@ body {
 	background-attachment: fixed;
 	background-color: $bg-color;
 	text-wrap: balance;
+	overflow-x: hidden;
 }
 
 h1,

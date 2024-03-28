@@ -2,6 +2,7 @@
 @use "../components/" as *;
 
 .contact {
+	position: relative;
 	margin: 15em 0 7.5em 0;
 
 	&__container {
@@ -21,6 +22,7 @@
 		}
 
 		&--form-box {
+			@include gradientBorder;
 			grid-column: 1/-1;
 			border-radius: $btn-border-radius;
 			background-color: #122631;
@@ -40,6 +42,7 @@
 	}
 
 	&__card {
+		@include gradientBorder;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
@@ -88,8 +91,14 @@
 	}
 
 	&__card-link {
+		z-index: 1;
 		margin-left: 1em;
 		font-size: 1.6rem;
+		transition: filter 0.3s;
+
+		&:hover {
+			filter: brightness(0.7);
+		}
 	}
 
 	&__form {
@@ -143,6 +152,7 @@
 	&__form-textarea {
 		resize: vertical;
 		min-height: 10em;
+		max-height: 25em;
 
 		& ~ .contact__form-label {
 			top: 1.5em;

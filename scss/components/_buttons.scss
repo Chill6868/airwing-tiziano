@@ -87,3 +87,23 @@ $btn-gradient-color: linear-gradient(45deg, $main-color, $secondary-color);
 	background: $btn-gradient-color;
 	// border: 1px solid red;
 }
+
+// GRADIENT BORDER TEST
+@mixin gradientBorder {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: $btn-border-radius;
+		border: 1px solid transparent;
+		background: $btn-gradient-color border-box;
+		mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+		mask-composite: destination-out;
+		mask-composite: exclude;
+	}
+}

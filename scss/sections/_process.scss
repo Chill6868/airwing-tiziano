@@ -2,6 +2,7 @@
 @use "../components/" as *;
 
 .process {
+	position: relative;
 	margin: 7.5em 0;
 
 	&__card-box {
@@ -12,6 +13,7 @@
 	}
 
 	&__card {
+		@include gradientBorder;
 		padding: 1em;
 		border-radius: $btn-border-radius;
 		background-image: $backgroundTransparentGradient;
