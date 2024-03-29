@@ -16,7 +16,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		overflow: hidden;
+		// overflow: hidden;
 		// mask-image: linear-gradient(
 		// 	to right,
 		// 	rgba(0, 0, 0, 1) 80%,
@@ -69,9 +69,9 @@
 	}
 
 	&__card-img {
-		width: 5rem;
-		border-radius: 50%;
-		// border: 1px solid green;
+		font-size: 5rem;
+		@include iconMainGradient;
+		padding: 3px;
 	}
 
 	&__card-text-box {

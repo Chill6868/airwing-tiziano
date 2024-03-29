@@ -2049,7 +2049,6 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 .reviews .swiper {
   height: 100%;
@@ -2104,8 +2103,12 @@ h6 {
   margin-bottom: 1em;
 }
 .reviews__card-img {
-  width: 5rem;
-  border-radius: 50%;
+  font-size: 5rem;
+  background: #002e4d;
+  background: linear-gradient(135deg, #00bfff 0%, #026485 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 3px;
 }
 .reviews__card-text-box {
   margin-left: 1em;
