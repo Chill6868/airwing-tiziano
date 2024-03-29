@@ -125,7 +125,7 @@
 
 		&--active {
 			font-size: 1.4rem !important;
-			top: 0;
+			top: 0 !important;
 		}
 	}
 
@@ -156,7 +156,7 @@
 
 		& ~ .contact__form-label {
 			top: 1.5em;
-			// transform: translateY(-50%);
+			transform: translateY(-50%);
 		}
 	}
 

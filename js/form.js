@@ -6,12 +6,12 @@ const labels = document.querySelectorAll(".contact__form-label");
 const checkInputValue = (input) => {
 	if (input.value != "") {
 		const inputBox = input.closest("div");
-		const inputLabelSibling = inputBox.querySelector("label");
+		const inputLabelSibling = inputBox.querySelector(".contact__form-label");
 
 		inputLabelSibling.classList.add("contact__form-label--active");
 	} else {
 		const inputBox = input.closest("div");
-		const inputLabelSibling = inputBox.querySelector("label");
+		const inputLabelSibling = inputBox.querySelector(".contact__form-label");
 
 		inputLabelSibling.classList.remove("contact__form-label--active");
 	}

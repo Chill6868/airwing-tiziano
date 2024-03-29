@@ -1259,32 +1259,22 @@ h6 {
 .bg-animation__box-layout-1 .bg-animation__icon:nth-of-type(1) {
   grid-column: 1/2;
   grid-row: 1/2;
-  rotate: 25deg;
-  scale: 0.7;
 }
 .bg-animation__box-layout-1 .bg-animation__icon:nth-of-type(2) {
   grid-column: 2/3;
   grid-row: 2/3;
-  rotate: 100deg;
-  scale: 1.2;
 }
 .bg-animation__box-layout-2 .bg-animation__icon:nth-of-type(1) {
   grid-column: 2/3;
   grid-row: 1/2;
-  rotate: 25deg;
-  scale: 0.3;
 }
 .bg-animation__box-layout-2 .bg-animation__icon:nth-of-type(2) {
   grid-column: 1/2;
   grid-row: 2/3;
-  rotate: 100deg;
-  scale: 1.5;
 }
 .bg-animation__box-layout-3 .bg-animation__icon:nth-of-type(1) {
   grid-column: 2/3;
   grid-row: 2/3;
-  rotate: 25deg;
-  scale: 2;
 }
 .bg-animation__box-layout-3 .bg-animation__icon:nth-of-type(2) {
   display: none;
@@ -1295,14 +1285,10 @@ h6 {
 .bg-animation__box-layout-4 .bg-animation__icon:nth-of-type(2) {
   grid-column: 1/2;
   grid-row: 2/3;
-  rotate: 25deg;
-  scale: 1;
 }
 .bg-animation__box-layout-5 .bg-animation__icon:nth-of-type(1) {
   grid-column: 2/3;
   grid-row: 1/2;
-  rotate: 25deg;
-  scale: 0.5;
 }
 .bg-animation__box-layout-5 .bg-animation__icon:nth-of-type(2) {
   display: none;
@@ -1313,8 +1299,6 @@ h6 {
 .bg-animation__box-layout-6 .bg-animation__icon:nth-of-type(2) {
   grid-column: 1/2;
   grid-row: 2/3;
-  rotate: 25deg;
-  scale: 0.5;
 }
 .bg-animation__icon {
   width: 50%;
@@ -1323,6 +1307,32 @@ h6 {
   opacity: 0.2;
 }
 
+@media (min-width: 768px) {
+  .bg-animation__box-layout-1 .bg-animation__icon:nth-of-type(1) {
+    scale: 0.7;
+  }
+  .bg-animation__box-layout-1 .bg-animation__icon:nth-of-type(2) {
+    scale: 1.2;
+  }
+  .bg-animation__box-layout-2 .bg-animation__icon:nth-of-type(1) {
+    scale: 0.3;
+  }
+  .bg-animation__box-layout-2 .bg-animation__icon:nth-of-type(2) {
+    scale: 1.5;
+  }
+  .bg-animation__box-layout-3 .bg-animation__icon:nth-of-type(1) {
+    scale: 2;
+  }
+  .bg-animation__box-layout-4 .bg-animation__icon:nth-of-type(2) {
+    scale: 1;
+  }
+  .bg-animation__box-layout-5 .bg-animation__icon:nth-of-type(1) {
+    scale: 0.5;
+  }
+  .bg-animation__box-layout-6 .bg-animation__icon:nth-of-type(2) {
+    scale: 0.5;
+  }
+}
 .nav {
   display: none;
   z-index: 100;
@@ -1819,10 +1829,10 @@ h6 {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-10px);
+    transform: translateY(-6px);
   }
   60% {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
 }
 .header {
@@ -2623,7 +2633,7 @@ h6 {
 }
 .contact__form-label--active {
   font-size: 1.4rem !important;
-  top: 0;
+  top: 0 !important;
 }
 .contact__form-input {
   padding: 1em;
@@ -2649,6 +2659,7 @@ h6 {
 }
 .contact__form-textarea ~ .contact__form-label {
   top: 1.5em;
+  transform: translateY(-50%);
 }
 .contact__form-btn {
   position: relative;
