@@ -110,6 +110,13 @@
 	&__form-input-box {
 		position: relative;
 		grid-column: 1/-1;
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			transition: background-color 5000s;
+			-webkit-text-fill-color: #fff !important;
+		}
 	}
 
 	&__form-label {
@@ -151,8 +158,8 @@
 
 	&__form-textarea {
 		resize: vertical;
-		min-height: 10em;
-		max-height: 25em;
+		min-height: 15em;
+		max-height: 30em;
 
 		& ~ .contact__form-label {
 			top: 1.5em;

@@ -20,6 +20,21 @@
     <link rel="stylesheet" href="https://unpkg.com/flexmasonry/dist/flexmasonry.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .nav__link:nth-of-type(3)::before {
+            position: absolute;
+            content: "";
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(to right,
+                    #00bfff 0%,
+                    #002e4d 100%);
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
