@@ -7,6 +7,8 @@
     <title>Airwing</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="./photoswipe/dist/photoswipe.css">
     <!-- FlexMasonry CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flexmasonry/dist/flexmasonry.css">
     <!-- FONTS -->
@@ -277,11 +279,11 @@
 
     <!-- PhotoSwipe Config JS -->
     <script type="module">
-        import PhotoSwipeLightbox from '../js/photoswipe/dist/photoswipe-lightbox.esm.js';
+        import PhotoSwipeLightbox from '../photoswipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
             gallery: '#my-gallery',
             children: 'a',
-            pswpModule: () => import('../js/photoswipe/dist/photoswipe.esm.js')
+            pswpModule: () => import('../photoswipe/dist/photoswipe.esm.js')
         });
         lightbox.init();
     </script>
