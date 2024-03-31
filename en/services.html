@@ -18,6 +18,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .nav__link:nth-of-type(2)::before {
+            position: absolute;
+            content: "";
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(to right,
+                    #00bfff 0%,
+                    #002e4d 100%);
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,7 +54,7 @@
                     <a href="./services" class="nav-mobile__link">Services</a>
                     <a href="./our-work" class="nav-mobile__link">Our Work</a>
                     <a href="./contact" class="nav-mobile__link">Contact</a>
-                    <a href="./en/" class="nav-mobile__link nav-mobile__link-language">
+                    <a href="./" class="nav-mobile__link nav-mobile__link-language">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
                             <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
                             <path
@@ -153,8 +168,8 @@
                 </div>
 
                 <div class="nav__btn-box">
-                    <a href="contact.html" class="nav__contact-btn">Contact</a>
-                    <a href="./en/" class="nav__btn-language">
+                    <a href="./contact" class="nav__contact-btn">Contact</a>
+                    <button class="nav__btn-language">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
                             <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
                             <path
@@ -235,71 +250,93 @@
                             </path>
                         </svg>
                         <span>&nbsp;Change Language</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="contact">
-        <div class="bg-animation__box bg-animation__box-layout-4">
+    <section class="section-heading">
+        <div class="bg-animation__box bg-animation__box-layout-2">
             <img src="./img/icons/droneIcon1.svg" alt="" class="bg-animation__icon">
             <img src="./img/icons/droneIcon2.svg" alt="" class="bg-animation__icon">
         </div>
         <div class="wrapper">
-            <div class="contact__container">
-                <div class="contact__box contact__box--info-box">
-                    <div class="contact__text-box">
-                        <p class="text__top">GET IN TOUCH WITH US</p>
-                        <h2 class="text__heading">Feel Free to Contact Us.</h2>
-                        <p class="text__p">Do you have any questions or need to discuss details? Don't hesitate to write
-                            to us! We are here to assist you and look forward to hearing from you soon.</p>
-                    </div>
-                    <div class="contact__card-box">
-                        <div class="contact__card">
-                            <div class="contact__card-icon-box">
-                                <i class="fa-regular fa-envelope contact__card-icon"></i>
-                            </div>
-                            <a class="contact__card-link"
-                                href="mailto:airwing.contact@gmail.com">airwing.contact@gmail.com</a>
-                        </div>
+            <div class="text-box">
+                <p class="text__top">WHAT SERVICES WE OFFER</p>
+                <h2 class="text__heading">Enhance your perspective with our offerings.</h2>
+                <p class="text__p">We offer comprehensive drone photography services tailored to various needs and
+                    purposes. We are ready to execute projects in any environment and situation, ensuring unparalleled
+                    quality. Let us elevate your projects to the next level with precise and
+                    spectacular drone photos.</p>
+            </div>
+        </div>
+    </section>
 
-                        <div class="contact__card">
-                            <div class="contact__card-icon-box">
-                                <i class="fa-regular fa-phone contact__card-icon"></i>
-                            </div>
-                            <a class="contact__card-link" href="tel:+393295762226">+39 329 576 2226</a>
-                        </div>
-                    </div>
+    <section class="services-description">
+        <div class="bg-animation__box bg-animation__box-layout-1">
+            <img src="./img/icons/droneIcon1.svg" alt="" class="bg-animation__icon">
+            <img src="./img/icons/droneIcon2.svg" alt="" class="bg-animation__icon">
+        </div>
+        <div class="wrapper">
+            <div class="services-description__container">
+                <div class="services-description__box">
+                    <p class="text__top-sm">EVENTS</p>
+                    <h2 class="text__heading-xs">Capture unforgettable moments with our drone photography.</h2>
+                    <p class="text__p-sm">Capture the essence of your event from a bird's-eye view with our drone
+                        photography services. Our aerial shots offer a distinctive perspective, infusing your event with
+                        a sense of grandeur and uniqueness. From weddings to corporate functions, our photos serve as
+                        timeless mementos and powerful marketing assets, ensuring your event stands out from the crowd.
+                    </p>
                 </div>
+                <img src="./img/icons/3dPeople2.png" alt="" class="services-description__3d-icon">
 
-                <div class="contact__box contact__box--form-box">
-                    <form class="contact__form" action="https://api.staticforms.xyz/submit" method="post">
-                        <input type="hidden" name="accessKey" value="dbc6b19e-55f4-42c3-b70c-49210ff1a175">
-                        <div class="contact__form-input-box">
-                            <input class="contact__form-input" type="text" name="name" id="name" required>
-                            <label class="contact__form-label" for="name">Name</label>
-                        </div>
-
-                        <div class="contact__form-input-box">
-                            <input class="contact__form-input" type="email" name="email" id="email" required>
-                            <label class="contact__form-label" for="email">Email Address</label>
-                        </div>
-
-                        <div class="contact__form-input-box">
-                            <input class="contact__form-input" type="tel" name="phone" id="tel">
-                            <label class="contact__form-label" for="tel">Phone Number (optional)</label>
-                        </div>
-
-                        <div class="contact__form-input-box">
-                            <textarea class="contact__form-input contact__form-textarea" name="message" id="message"
-                                required></textarea>
-                            <label class="contact__form-label" for="message">Message</label>
-                        </div>
-
-                        <button class="contact__form-btn">Send</button>
-                    </form>
+                <div class="services-description__box">
+                    <p class="text__top-sm">VENUES</p>
+                    <h2 class="text__heading-xs">Highlight your venue's best features with aerial shots.</h2>
+                    <p class="text__p-sm">Elevate the appeal of your property with stunning aerial photos taken from a
+                        drone. Our images showcase the intricate details and expansive layout of your venue, captivating
+                        potential customers and enticing them to explore further. With a fresh perspective from above,
+                        your property will shine in promotional materials, attracting more visitors and bookings.</p>
                 </div>
+                <img src="./img/icons/3dHouse2.png" alt="" class="services-description__3d-icon">
+
+                <div class="services-description__box">
+                    <p class="text__top-sm">LANDSCAPE</p>
+                    <h2 class="text__heading-xs">Discover nature's beauty from above.</h2>
+                    <p class="text__p-sm">Immerse yourself in the breathtaking beauty of landscapes captured from a
+                        drone's perspective. Our aerial photography unveils sweeping vistas and natural wonders in a way
+                        that traditional methods cannot match. Whether it's rugged mountains, serene lakes, or lush
+                        forests, our photos showcase the awe-inspiring majesty of nature, inviting viewers to experience
+                        its splendor from a new and unforgettable viewpoint.</p>
+                </div>
+                <img src="./img/icons/3dMountains2.png" alt="" class="services-description__3d-icon">
+
+                <div class="services-description__box">
+                    <p class="text__top-sm">OTHER</p>
+                    <h2 class="text__heading-xs">Explore endless possibilities with our drones.</h2>
+                    <p class="text__p-sm">Explore additional possibilities with our drone photography services. Whether
+                        it's capturing unique perspectives of architectural landmarks, documenting construction
+                        progress, or conducting aerial surveys, our versatile approach ensures we meet your diverse
+                        needs with precision and creativity. Contact us to discuss your specific requirements and let us
+                        tailor our services to exceed your expectations.</p>
+                </div>
+                <img src="./img/icons/3dClouds2.png" alt="" class="services-description__3d-icon">
+            </div>
+        </div>
+    </section>
+
+    <section class="get-in-touch">
+        <div class="bg-animation__box bg-animation__box-layout-6">
+            <img src="./img/icons/droneIcon1.svg" alt="" class="bg-animation__icon">
+            <img src="./img/icons/droneIcon2.svg" alt="" class="bg-animation__icon">
+        </div>
+        <div class="wrapper">
+            <div class="text-box">
+                <h3 class="text__heading-sm">
+                    Ready to kick off?</h3>
+                <p class="text__p-sm">Embark on our journey, where efficiency meets simplicity.</p>
+                <a href="./contact" class="get-in-touch__btn">Let's Connect!</a>
             </div>
         </div>
     </section>
@@ -332,9 +369,6 @@
 
     <!-- Navigation JS -->
     <script src="./js/navigation.js"></script>
-
-    <!-- Form JS -->
-    <script src="./js/form.js"></script>
 
     <!-- Footer Year JS -->
     <script src="./js/footer.js"></script>

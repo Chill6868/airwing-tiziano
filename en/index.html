@@ -5,19 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airwing</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Animate.css CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
     <!-- ICONS -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.1.1/css/pro.min.css">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .nav__link:nth-of-type(1)::before {
+            position: absolute;
+            content: "";
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(to right,
+                    #00bfff 0%,
+                    #002e4d 100%);
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,7 +57,7 @@
                     <a href="./services" class="nav-mobile__link">Services</a>
                     <a href="./our-work" class="nav-mobile__link">Our Work</a>
                     <a href="./contact" class="nav-mobile__link">Contact</a>
-                    <a href="./en/" class="nav-mobile__link nav-mobile__link-language">
+                    <a href="./" class="nav-mobile__link nav-mobile__link-language">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
                             <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
                             <path
@@ -153,8 +171,8 @@
                 </div>
 
                 <div class="nav__btn-box">
-                    <a href="contact.html" class="nav__contact-btn">Contact</a>
-                    <a href="./en/" class="nav__btn-language">
+                    <a href="./contact" class="nav__contact-btn">Contact</a>
+                    <button class="nav__btn-language">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
                             <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
                             <path
@@ -235,71 +253,268 @@
                             </path>
                         </svg>
                         <span>&nbsp;Change Language</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="contact">
+    <header class="header">
+        <div class="header__bg">
+            <video playsinline autoplay muted class="header__video"></video>
+            <div class="header__bg-shadow"></div>
+        </div>
+        <div class="wrapper">
+            <div class="text-box">
+                <h1 class="header__heading text__heading">Capture the Sky.</h1>
+                <p class="header__text text__p">Rent stunning drone shots hassle-free at Airwing! Elevate your
+                    projects
+                    with
+                    professional aerial perspectives tailored to your needs. Explore now and let your creativity soar!
+                </p>
+                <a href="#how" class="header__btn"><i class="fa-solid fa-angle-down header__arrow-icon"></i></a>
+            </div>
+            <!-- <div class="header__bg-icons-box">
+                <img src="./img/icons/droneIcon1.svg" alt="" class="header__bg-icon">
+                <img src="./img/icons/droneIcon2.svg" alt="" class="header__bg-icon">
+                <img src="./img/icons/droneIcon1.svg" alt="" class="header__bg-icon">
+            </div> -->
+        </div>
+    </header>
+
+    <section class="how" id="how">
+        <div class="bg-animation__box bg-animation__box-layout-1">
+            <img src="./img/icons/droneIcon1.svg" alt="" class="bg-animation__icon">
+            <img src="./img/icons/droneIcon2.svg" alt="" class="bg-animation__icon">
+        </div>
+        <div class="wrapper">
+            <div class="text-box">
+                <p class="text__top">HOW DO WE DO IT</p>
+                <h2 class="text__heading">Experience the drone photo rental like never before with us.
+                </h2>
+                <p class="text__p">Whether you're capturing stunning landscapes, documenting construction progress, or
+                    creating captivating marketing materials, our dedicated team is here to elevate your vision.</p>
+            </div>
+            <div class="how__card-box">
+                <div class="how__card">
+                    <i class="fa-regular fa-sun-bright how__card-icon"></i>
+                    <p class="how__card-title">Hassle-Free Experience</p>
+                    <p class="how__card-text">Enjoy a hassle-free rental experience with our intuitive platform and
+                        seamless processes.</p>
+                </div>
+
+                <div class="how__card">
+                    <i class="fa-regular fa-wand-magic-sparkles how__card-icon"></i>
+                    <p class="how__card-title">Personalized Service</p>
+                    <p class="how__card-text">Receive personalized service tailored to your unique needs, from
+                        consultation to delivery, ensuring a memorable and rewarding experience.</p>
+                </div>
+
+                <div class="how__card">
+                    <i class="fa-regular fa-drone how__card-icon"></i>
+                    <p class="how__card-title">Cutting-Edge Technology</p>
+                    <p class="how__card-text">Harness cutting-edge drone technology for unrivaled clarity, depth, and
+                        creativity in every aerial photo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="bg-animation__box bg-animation__box-layout-2">
+            <img src="./img/icons/droneIcon1.svg" alt="" class="bg-animation__icon">
+            <img src="./img/icons/droneIcon2.svg" alt="" class="bg-animation__icon">
+        </div>
+        <div class="wrapper">
+            <div class="text-box">
+                <p class="text__top">WHAT OUR CLIENTS SAY</p>
+                <h2 class="text__heading">Hear what our clients say!</h2>
+                <p class="text__p">See what our customers are saying! Read reviews and discover why they love us.</p>
+                <a href="./contact" class="reviews__btn">Let's Chat!</a>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="reviews__box">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="reviews__card-quote-box">
+                                <img src="./img/icons/quote.svg" alt="" class="reviews__card-quote">
+                            </div>
+                            <div class="reviews__card-heading">
+                                <div class="reviews__card-img"><i class="fa-solid fa-circle-user"></i></div>
+                                <div class="reviews__card-text-box">
+                                    <p class="reviews__card-author">Sofia B.</p>
+                                    <p class="reviews__card-who">Client</p>
+                                </div>
+                            </div>
+                            <p class="reviews__card-text">"I was initially skeptical about using aerial photography for
+                                my real estate listings, but Airwing proved me wrong. The high-quality images they
+                                provided significantly boosted the appeal of
+                                my properties. Clients were impressed, and so was I."</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="reviews__card-quote-box">
+                                <img src="./img/icons/quote.svg" alt="" class="reviews__card-quote">
+                            </div>
+                            <div class="reviews__card-heading">
+                                <div class="reviews__card-img"><i class="fa-solid fa-circle-user"></i></div>
+                                <div class="reviews__card-text-box">
+                                    <p class="reviews__card-author">Alessandro R.</p>
+                                    <p class="reviews__card-who">Client</p>
+                                </div>
+                            </div>
+                            <p class="reviews__card-text">"I run a small business and needed aerial photos for a
+                                marketing campaign. Airwing not only delivered exceptional photos but also provided
+                                valuable insights on how to best utilize them for maximum impact."</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="reviews__card-quote-box">
+                                <img src="./img/icons/quote.svg" alt="" class="reviews__card-quote">
+                            </div>
+                            <div class="reviews__card-heading">
+                                <div class="reviews__card-img"><i class="fa-solid fa-circle-user"></i></div>
+                                <div class="reviews__card-text-box">
+                                    <p class="reviews__card-author">Matteo C.</p>
+                                    <p class="reviews__card-who">Client</p>
+                                </div>
+                            </div>
+                            <p class="reviews__card-text">"Organizing events can be stressful, but Airwing
+                                made it easy to capture memorable moments from unique angles. The stunning quality of
+                                the photos exceeded my expectations. I'll
+                                definitely be using their services for future events."</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="reviews__card-quote-box">
+                                <img src="./img/icons/quote.svg" alt="" class="reviews__card-quote">
+                            </div>
+                            <div class="reviews__card-heading">
+                                <div class="reviews__card-img"><i class="fa-solid fa-circle-user"></i></div>
+                                <div class="reviews__card-text-box">
+                                    <p class="reviews__card-author">Marco F.</p>
+                                    <p class="reviews__card-who">Client</p>
+                                </div>
+                            </div>
+                            <p class="reviews__card-text">"I was hesitant about using aerial photography for my
+                                business, but Airwing made the process seamless and stress-free. From the
+                                initial consultation to the final delivery of images, their dedication were evident
+                                ensuring a smooth experience throughout."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="bg-animation__box bg-animation__box-layout-3">
+            <img src="./img/icons/droneIcon1.svg" alt="" class="bg-animation__icon">
+            <img src="./img/icons/droneIcon2.svg" alt="" class="bg-animation__icon">
+        </div>
+        <div class="wrapper">
+            <div class="text-box">
+                <p class="text__top">WHAT DO WE OFFER</p>
+                <h2 class="text__heading">Elevate Your vision with our services.</h2>
+                <p class="text__p">At Airwing, we specialize in delivering top-tier aerial photography services. Whether
+                    it's for real estate, construction, or events, our team captures stunning aerial views to elevate
+                    your projects. With us, expect a seamless experience from start to finish, ensuring your goals are
+                    achieved effortlessly.</p>
+                <div class="services__container">
+                    <div class="services__box">
+                        <h3 class="services__title text__heading-xs">Events</h3>
+                        <p class="services__text text__p-sm">We photograph events from a drone, adding a unique
+                            perspective
+                            and atmosphere, setting your event apart from others. Our photos will provide a keepsake for
+                            years to come and marketing material.</p>
+                        <a href="./services" class="services__link text__p-xs"><span class="services__link-text">Learn
+                                more</span>&nbsp;<i class="fa-regular fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="services__box">
+                        <h3 class="services__title text__heading-xs">Venues</h3>
+                        <p class="services__text text__p-sm">Photos from a drone will highlight the details of your
+                            property, drawing the attention of customers and presenting the entire space in a new
+                            perspective, increasing the attractiveness of your offer.</p>
+                        <a href="./services" class="services__link text__p-xs"><span class="services__link-text">Learn
+                                more</span>&nbsp;<i class="fa-regular fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="services__box">
+                        <h3 class="services__title text__heading-xs">Landscape</h3>
+                        <p class="services__text text__p-sm">Our landscape photos from a drone will captivate viewers,
+                            presenting scenic vistas in a way that is difficult to achieve with traditional methods.
+                            Reveal the beauty of nature from a new and unique perspective.</p>
+                        <a href="./services" class="services__link text__p-xs"><span class="services__link-text">Learn
+                                more</span>&nbsp;<i class="fa-regular fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
         <div class="bg-animation__box bg-animation__box-layout-4">
             <img src="./img/icons/droneIcon1.svg" alt="" class="bg-animation__icon">
             <img src="./img/icons/droneIcon2.svg" alt="" class="bg-animation__icon">
         </div>
         <div class="wrapper">
-            <div class="contact__container">
-                <div class="contact__box contact__box--info-box">
-                    <div class="contact__text-box">
-                        <p class="text__top">GET IN TOUCH WITH US</p>
-                        <h2 class="text__heading">Feel Free to Contact Us.</h2>
-                        <p class="text__p">Do you have any questions or need to discuss details? Don't hesitate to write
-                            to us! We are here to assist you and look forward to hearing from you soon.</p>
+            <div class="text-box">
+                <p class="text__top">HOW OUR SMOOTH PROCESS WORKS</p>
+                <h2 class="text__heading">Experience the smooth journey to creating aerial masterpieces.</h2>
+                <p class="text__p">Our drone photography services bring professionalism and ease of operation from the
+                    first contact to the delivery of the finished images.</p>
+            </div>
+            <div class="process__card-box">
+                <div class="process__card">
+                    <div class="process__card-icon-box"><i class="fa-regular fa-1 process__card-icon"></i>
                     </div>
-                    <div class="contact__card-box">
-                        <div class="contact__card">
-                            <div class="contact__card-icon-box">
-                                <i class="fa-regular fa-envelope contact__card-icon"></i>
-                            </div>
-                            <a class="contact__card-link"
-                                href="mailto:airwing.contact@gmail.com">airwing.contact@gmail.com</a>
-                        </div>
-
-                        <div class="contact__card">
-                            <div class="contact__card-icon-box">
-                                <i class="fa-regular fa-phone contact__card-icon"></i>
-                            </div>
-                            <a class="contact__card-link" href="tel:+393295762226">+39 329 576 2226</a>
-                        </div>
-                    </div>
+                    <h6 class="process__card-title text__heading-xs">Order the service</h6>
+                    <p class="process__card-text text__p-sm">Contact us to set the date and details of your drone
+                        photo shoot. We
+                        provide professional service and advice.</p>
                 </div>
 
-                <div class="contact__box contact__box--form-box">
-                    <form class="contact__form" action="https://api.staticforms.xyz/submit" method="post">
-                        <input type="hidden" name="accessKey" value="dbc6b19e-55f4-42c3-b70c-49210ff1a175">
-                        <div class="contact__form-input-box">
-                            <input class="contact__form-input" type="text" name="name" id="name" required>
-                            <label class="contact__form-label" for="name">Name</label>
-                        </div>
-
-                        <div class="contact__form-input-box">
-                            <input class="contact__form-input" type="email" name="email" id="email" required>
-                            <label class="contact__form-label" for="email">Email Address</label>
-                        </div>
-
-                        <div class="contact__form-input-box">
-                            <input class="contact__form-input" type="tel" name="phone" id="tel">
-                            <label class="contact__form-label" for="tel">Phone Number (optional)</label>
-                        </div>
-
-                        <div class="contact__form-input-box">
-                            <textarea class="contact__form-input contact__form-textarea" name="message" id="message"
-                                required></textarea>
-                            <label class="contact__form-label" for="message">Message</label>
-                        </div>
-
-                        <button class="contact__form-btn">Send</button>
-                    </form>
+                <div class="process__card">
+                    <div class="process__card-icon-box"><i class="fa-regular fa-2 process__card-icon"></i></div>
+                    <h6 class="process__card-title text__heading-xs">Photo session</h6>
+                    <p class="process__card-text text__p-sm">Drone pilot and photographer carefully plan and
+                        execute the session to ensure the highest quality drone photos.</p>
                 </div>
+
+                <div class="process__card">
+                    <div class="process__card-icon-box"><i class="fa-regular fa-3 process__card-icon"></i></div>
+                    <h6 class="process__card-title text__heading-xs">Editing and processing</h6>
+                    <p class="process__card-text text__p-sm">After the session is complete, we edit and process the
+                        photos, making
+                        sure they look great and have a unique atmosphere.</p>
+                </div>
+
+                <div class="process__card">
+                    <div class="process__card-icon-box"><i class="fa-regular fa-4 process__card-icon"></i></div>
+                    <h6 class="process__card-title text__heading-xs">Delivery of materials</h6>
+                    <p class="process__card-text text__p-sm">Finished photos from the drone are delivered at your
+                        convenience, so
+                        you can quickly and easily use them for personal or business purposes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="get-in-touch">
+        <div class="bg-animation__box bg-animation__box-layout-5">
+            <img src="./img/icons/droneIcon1.svg" alt="" class="bg-animation__icon">
+            <img src="./img/icons/droneIcon2.svg" alt="" class="bg-animation__icon">
+        </div>
+        <div class="wrapper">
+            <div class="text-box">
+                <h3 class="text__heading-sm">Ready to get started?</h3>
+                <p class="text__p-sm">Our process is fast, friendly, and simple.</p>
+                <a href="./contact" class="get-in-touch__btn">Get in touch!</a>
             </div>
         </div>
     </section>
@@ -333,8 +548,14 @@
     <!-- Navigation JS -->
     <script src="./js/navigation.js"></script>
 
-    <!-- Form JS -->
-    <script src="./js/form.js"></script>
+    <!-- Header Video JS -->
+    <script src="./js/headerVideo.js"></script>
+
+    <!-- Swiper Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Settings JS -->
+    <script src="./js/swiper.js"></script>
 
     <!-- Footer Year JS -->
     <script src="./js/footer.js"></script>
