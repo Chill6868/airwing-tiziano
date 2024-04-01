@@ -140,6 +140,7 @@
 
                 <div class="contact__box contact__box--form-box">
                     <form class="contact__form" action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="text" name="honeypot" style="display: none;">
                         <input type="hidden" name="accessKey" value="dbc6b19e-55f4-42c3-b70c-49210ff1a175">
                         <div class="contact__form-input-box">
                             <input class="contact__form-input" type="text" name="name" id="name" required>
@@ -197,6 +198,9 @@
 
     <!-- Form JS -->
     <script src="../js/form.js"></script>
+
+    <!-- Form Send JS -->
+    <script src="./js/formSendEn.js"></script>
 
     <!-- Navigation JS -->
     <script src="../js/navigation.js"></script>
