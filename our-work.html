@@ -7,6 +7,8 @@
     <title>Airwing</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- PhotoSwipe CSS -->
     <link rel="stylesheet" href="./photoswipe/dist/photoswipe.css">
     <!-- FlexMasonry CSS -->
@@ -267,8 +269,9 @@
         <div class="wrapper">
             <div class="text-box">
                 <p class="text__top">SCOPRI IL NOSTRO LAVORO</p>
-                <h2 class="text__heading">Esplorate gli esempi dei nostri servizi fotografici.</h2>
-                <p class="text__p">Dall'inizio alla fine, ogni progetto è pieno di passione e creatività. Puntiamo
+                <h2 class="text__heading" data-aos="fade-up">Esplorate gli esempi dei nostri servizi fotografici.</h2>
+                <p class="text__p" data-aos="fade-up">Dall'inizio alla fine, ogni progetto è pieno di passione e
+                    creatività. Puntiamo
                     all'eccellenza e alla collaborazione, con l'obiettivo di avere un impatto duraturo.</p>
             </div>
         </div>
@@ -378,9 +381,9 @@
         </div>
         <div class="wrapper">
             <div class="text-box">
-                <h3 class="text__heading-sm">Pronti a ripartire?</h3>
-                <p class="text__p-sm">Il nostro approccio è veloce, amichevole e diretto.</p>
-                <a href="./contact" class="get-in-touch__btn">Raggiungeteci!</a>
+                <h3 class="text__heading-sm" data-aos="fade-up">Pronti a ripartire?</h3>
+                <p class="text__p-sm" data-aos="fade-up">Il nostro approccio è veloce, amichevole e diretto.</p>
+                <a href="./contact" class="get-in-touch__btn" data-aos="fade-up">Raggiungeteci!</a>
             </div>
         </div>
     </section>
@@ -436,6 +439,12 @@
 
     <!-- Background Animation JS -->
     <script src="./js/bgAnimation.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- AOS Config JS -->
+    <script src="./js/AOS.js"></script>
 </body>
 
 </html>

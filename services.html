@@ -7,6 +7,8 @@
     <title>Airwing</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -263,8 +265,10 @@
         <div class="wrapper">
             <div class="text-box">
                 <p class="text__top">QUALI SERVIZI OFFRIAMO</p>
-                <h2 class="text__heading">Migliorate la vostra prospettiva con le nostre offerte.</h2>
-                <p class="text__p">Offriamo servizi completi di fotografia con drone, adatti a diverse esigenze e
+                <h2 class="text__heading" data-aos="fade-up">Migliorate la vostra prospettiva con le nostre offerte.
+                </h2>
+                <p class="text__p" data-aos="fade-up">Offriamo servizi completi di fotografia con drone, adatti a
+                    diverse esigenze e
                     finalità. Siamo pronti a realizzare progetti in qualsiasi ambiente e situazione, garantendo una
                     qualità senza pari. Permetteteci di elevare i vostri progetti a un livello superiore con foto da
                     drone precise e spettacolari.</p>
@@ -279,7 +283,7 @@
         </div>
         <div class="wrapper">
             <div class="services-description__container">
-                <div class="services-description__box">
+                <div class="services-description__box" data-aos="fade-up">
                     <p class="text__top-sm">EVENTI</p>
                     <h2 class="text__heading-xs">Catturate momenti indimenticabili con la nostra fotografia da drone.
                     </h2>
@@ -291,9 +295,9 @@
                     </p>
                 </div>
                 <img src="./img/icons/3dPeople2.png" alt="Icona di figura in plastica 3D"
-                    class="services-description__3d-icon">
+                    class="services-description__3d-icon" data-aos="fade-left">
 
-                <div class="services-description__box">
+                <div class="services-description__box" data-aos="fade-up">
                     <p class="text__top-sm">LOCALI</p>
                     <h2 class="text__heading-xs">Mettete in risalto le caratteristiche migliori della vostra sede con le
                         riprese aeree.</h2>
@@ -304,9 +308,9 @@
                         e prenotazioni.</p>
                 </div>
                 <img src="./img/icons/3dHouse2.png" alt="Icona di casa in plastica 3D"
-                    class="services-description__3d-icon">
+                    class="services-description__3d-icon" data-aos="fade-right">
 
-                <div class="services-description__box">
+                <div class="services-description__box" data-aos="fade-up">
                     <p class="text__top-sm">PAESAGGIO</p>
                     <h2 class="text__heading-xs">Scoprite la bellezza della natura dall'alto.</h2>
                     <p class="text__p-sm">Immergetevi nella bellezza mozzafiato dei paesaggi catturati dalla prospettiva
@@ -316,9 +320,9 @@
                         spettatori a sperimentare il suo splendore da un punto di vista nuovo e indimenticabile.</p>
                 </div>
                 <img src="./img/icons/3dMountains2.png" alt="Icona di montagna in plastica 3D"
-                    class="services-description__3d-icon">
+                    class="services-description__3d-icon" data-aos="fade-left">
 
-                <div class="services-description__box">
+                <div class="services-description__box" data-aos="fade-up">
                     <p class="text__top-sm">ALTRO</p>
                     <h2 class="text__heading-xs">Esplorate infinite possibilità con i nostri droni.</h2>
                     <p class="text__p-sm">Esplorate altre possibilità con i nostri servizi di fotografia con drone. Che
@@ -329,7 +333,7 @@
                         vostre aspettative.</p>
                 </div>
                 <img src="./img/icons/3dClouds2.png" alt="Icona di delle nuvole in plastica 3D"
-                    class="services-description__3d-icon">
+                    class="services-description__3d-icon" data-aos="fade-right">
             </div>
         </div>
     </section>
@@ -341,9 +345,10 @@
         </div>
         <div class="wrapper">
             <div class="text-box">
-                <h3 class="text__heading-sm">Pronti a partire?</h3>
-                <p class="text__p-sm">Partite per il nostro viaggio, dove l'efficienza incontra la semplicità.</p>
-                <a href="./contact" class="get-in-touch__btn">Connettiamoci!</a>
+                <h3 class="text__heading-sm" data-aos="fade-up">Pronti a partire?</h3>
+                <p class="text__p-sm" data-aos="fade-up">Partite per il nostro viaggio, dove l'efficienza incontra la
+                    semplicità.</p>
+                <a href="./contact" class="get-in-touch__btn" data-aos="fade-up">Connettiamoci!</a>
             </div>
         </div>
     </section>
@@ -382,6 +387,12 @@
 
     <!-- Background Animation JS -->
     <script src="./js/bgAnimation.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- AOS Config JS -->
+    <script src="./js/AOS.js"></script>
 </body>
 
 </html>
